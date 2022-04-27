@@ -8,10 +8,10 @@ int main(int argc, char *argv[]) {
 	ArrayList *pList = NULL;
 	ArrayListNode *pValue = NULL;
 
-	pList = createArrayList(6);
+	pList = createArrayList(6);  //최대 6개 
 	if (pList != NULL)
 	{
-		ArrayListNode node;
+		ArrayListNode node; //이것이 추가되어야한다.
 
 		// 리스트 초기화: 1, 3, 5 추가.
 		node.data = 1;
@@ -22,17 +22,17 @@ int main(int argc, char *argv[]) {
 
 		node.data = 5;
 		addALElement(pList, 2, node);
-		displayArrayList(pList);
+		displayArrayList(pList); //출력
 
 		// 첫번째 원소 제거.
-		removeALElement(pList, 0);
+		/*removeALElement(pList, 0);
 		displayArrayList(pList);
 
 		arrayCount = getArrayListLength(pList);
 		for(i = 0; i < arrayCount; i++) {
 			pValue = getALElement(pList, i);
 			printf("위치[%d]-%d\n", i, pValue->data);
-		}
+		}*/
 
 		deleteArrayList(pList);
 	}

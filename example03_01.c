@@ -25,11 +25,11 @@ int main(int argc, char* argv[])
 		addALElement(pList, 2, node);
 		displayArrayList(pList);
 
-		//첫번째 원소 제거
-		removeALElement(pList, 0);
+		////첫번째 원소 제거
+		removeALElement(pList, 2);
 		displayArrayList(pList);
 
-		arrayCount = getArrayListLength(pList);
+		arrayCount = getArrayListLength(pList);//리스트의 원소갯수를 가져오는 함수
 		for (i = 0; i < arrayCount; i++)
 		{
 			pValue = getALElement(pList, i);
